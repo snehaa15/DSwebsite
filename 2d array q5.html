@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ans 5.</h2>
+<pre>// 1. The transpose of a matrix is a new matrix that is obtained by exchanging
+    //the rows and columns.
+    //2. In this program, the user is asked to enter the number of rows r and columns c. 
+    //Their values should be less than 10 in this program. You can take whatever you like
+    //3. Then, the user is asked to enter the elements of the matrix (of order r*c).
+    //4. The program below then computes the transpose of the matrix and prints it on the screen.
+    
+    
+    #include&lt;stdio.h>
+    int main() {
+      int a[10][10], transpose[10][10], r, c,i,j;
+      printf("Enter rows and columns: ");
+      scanf("%d %d", &r, &c);
+    
+      // asssigning elements to the matrix
+      printf("\nEnter matrix elements:\n");
+      for (i = 0; i < r; ++i)
+      for (j = 0; j < c; ++j) {
+        printf("Enter element a%d%d: ", i + 1, j + 1);
+        scanf("%d", &a[i][j]);
+      }
+    
+      // printing the matrix 
+      printf("\nEntered matrix: \n");
+      for (i = 0; i < r; ++i)
+      for (j = 0; j < c; ++j) {
+        printf("%d  ", a[i][j]);
+        if (j == c - 1)
+        printf("\n");
+      }
+    
+      //  transpose the matrix
+      for (i = 0; i < r; ++i)
+      for (j = 0; j < c; ++j) {
+        transpose[j][i] = a[i][j];
+      }
+    
+      // printing the transpose
+      printf("\nTranspose of the matrix:\n");
+      for (i = 0; i < c; ++i)
+      for (j = 0; j < r; ++j) {
+        printf("%d  ", transpose[i][j]);
+        if (j == r - 1)
+        printf("\n");
+      }
+      return 0;
+    }</pre>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ans 4.</h2>
+<pre>#include&lt;stdio.h>
+    #include&lt;conio.h>
+    // function to get matrix elements entered by the user
+    void getmtr(int matrix[][10], int row, int column) {
+    
+       int i,j;
+       printf("\nEnter elements: \n");
+    
+       for (i = 0; i < row; ++i) {
+          for (j = 0; j < column; ++j) {
+             printf("Enter a%d%d: ", i + 1, j + 1);
+             scanf("%d", &matrix[i][j]);
+          }
+       }
+    }
+    
+    // function to multiply two matrices
+    void product(int first[][10],int second[][10],int result[][10],int r1, int c1, int r2, int c2) {
+       int i,j,k;
+       // Initializing elements of matrix mul to 0.
+       //after this stary the multiply process
+       for (i = 0; i < r1; ++i) {
+          for (j = 0; j < c2; ++j) {
+             result[i][j] = 0;
+          }
+       }
+    
+       // Multiplying first and second matrices and storing it in result
+       for (i = 0; i < r1; ++i) { //first loop following row1
+          for (j = 0; j < c2; ++j) {//socond loop folowing column2
+             for (k = 0; k < c1; ++k) {//third loop following column 1
+             //also help to select elements which ought to be multuply
+                result[i][j] += first[i][k] * second[k][j];
+             }
+          }
+       }
+    }
+    
+    // display the matrix after multiplication
+    void display(int result[][10], int row, int column) {
+       int i,j,k;
+       printf("\nOutput Matrix:\n");
+       for (i = 0; i < row; ++i) {
+          for (j = 0; j < column; ++j) {
+             printf("%d  ", result[i][j]);
+             if (j == column - 1)
+                printf("\n"); //again to break line after the loop reach the end element
+          }
+       }
+    }
+    
+    int main() {
+       int first[10][10], second[10][10], result[10][10], row1, column1, row2, column2;
+       printf("Enter rows and column for the first matrix: ");
+       scanf("%d %d", &row1, &column1);
+       printf("Enter rows and column for the second matrix: ");
+       scanf("%d %d", &row2, &column2);
+    
+       // Taking input until
+       // 1st matrix columns is not equal to 2nd matrix row
+       //so that multiplicaiton can be possible
+       while (column1 != row2) {
+          printf("Error! Enter rows and columns again.\n");
+          printf("Enter rows and columns for the first matrix: ");
+          scanf("%d%d", &row1, &column1);
+          printf("Enter rows and columns for the second matrix: ");
+          scanf("%d%d", &row2, &column2);
+       }
+    
+       // get elements of the first matrix
+       getmtr(first, row1, column1);
+    
+       // get elements of the second matrix
+       getmtr(second, row2, column2);
+    
+       // multiply two matrices.
+       product(first, second, result, row1, column1, row2, column2);
+    
+       // display the result
+       display(result, row1, column2);
+    
+       return 0;
+    }</pre>
+</body>
+</html>

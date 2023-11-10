@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Questions</title>
+    <style>
+        header{
+			width: 100%; height:100vh;
+			background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("background1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+        nav{
+			width:100%;
+			height:15vh;
+			background:black;
+			color:white;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			text-transform:uppercase;
+		}
+        nav .menu{
+			width:100%;
+            word-spacing: 50px;
+            padding: 150px;
+			/* display:flex; */
+			justify-content: space-between;
+		}
+		nav .menu a{
+			width:35%;
+			text-decoration:none;color:white;
+			font-weight:bold;
+
+		}
+        
+        nav .menu a:first-child{
+        	color:#00b894;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #programList {
+            width: 30%;
+            border-right: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        #programList h2 {
+            font-size: 1.2em;
+        }
+
+        #programList ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        #programList li {
+            margin-bottom: 10px;
+        }
+
+        #programList a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        #programList a:hover {
+            color: #0078d4;
+        }
+
+        #codeOutput {
+            flex: 1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="programList">
+    <h2>1D Array Questions</h2>
+    <ol>
+        <li><a href="1d array q1.html" target="codeFrame">1. Enter an array from the user and display all the values?</a></li>
+        <li><a href="1d array q2.html" target="codeFrame">2. Enter an array from the user and print the array in reverse order?</a></li>
+        <li><a href="1d array q3.html" target="codeFrame">3. Enter an array from the user and copy the array into a second array?</a></li>
+        <li><a href="1d array q4.html" target="codeFrame">4. Enter an array from the user and copy it into another array in reverse order?</a></li>
+        <li><a href="1d array q5.html" target="codeFrame">5. Enter an array from the user and print the number which is even?</a></li>
+        <li><a href="1d array q6.html" target="codeFrame">6. Enter an array from user and print the number which is positive ?</a></li>
+        <li><a href="1d array q7.html" target="codeFrame">7. Enter an array from user and square all the values of array ?</a></li>
+        <li><a href="1d array q8.html" target="codeFrame">8. Enter an array from user and find maximum and minimum value?</a></li>
+        <li><a href="1d array q9.html" target="codeFrame">9. Enter an array from user and find the k-th smallest value?</a></li>
+        <li><a href="1d array q10.html" target="codeFrame">10. Enter an array from user and add all values ?</a></li>
+        <li><a href="1d array q11.html" target="codeFrame">11. Enter an array from user and find the duplicate values?</a></li>
+        <li><a href="1d array q12.html" target="codeFrame">12. Enter an array from user and remove the duplicate values and fill with zero?</a></li>
+        <li><a href="1d array q13.html" target="codeFrame">13. Enter an array from user and count the duplicate values?</a></li>
+        <li><a href="1d array q14.html" target="codeFrame">14. Enter an array from user and print all possible combinations of the elements?</a></li>
+        <li><a href="1d array q15.html" target="codeFrame">15. Enter an array from user and print all the palindrome numbers?</a></li>
+        <li><a href="1d array q16.html" target="codeFrame">16. Enter two arrays from the user and check they are same or not?</a></li>
+        <li><a href="1d array q17.html" target="codeFrame">17. Merge the two sorted arrays into one array but in sorted order?</a></li>
+        <li><a href="1d array q18.html" target="codeFrame">18. Find the local minima in the array? (An element in an array is a local minima if it less than the element after it, and the element before it)</a></li>
+        <li><a href="1d array q19.html" target="codeFrame">19. Find the local maxima in the array? (An element in an array is a local maxima if it greater than the element after it, and the element before it)</a></li>
+        <li><a href="1d array q20.html" target="codeFrame">20. Trapping Rain Water Problem: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.</a></li>
+        
+        <!-- Add more program links as needed -->
+    </ol>
+</div>
+
+<div id="codeOutput">
+    <iframe name="codeFrame" src=""></iframe>
+</div>
+
+</body>
+</html>

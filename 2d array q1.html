@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ans 1.</h2>
+<pre>#include&lt;stdio.h>
+    #include&lt;conio.h>
+    int main()
+    {
+        int input[4][2], i, j;
+    
+        printf("Enter a matrix of 4 rows and 2 columns:\n");
+    
+        // enter the matrix
+        for (i = 0; i < 4; i++)
+        {
+            for (j = 0; j < 2; j++)
+            {
+                printf("Enter element at row %d and column %d: ", i + 1, j + 1);
+                scanf("%d", &input[i][j]);
+            }
+        }
+    
+        // Display the matrix in matrix format
+        printf("\nMatrix entered by the user:\n");
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                printf("%d\t", input[i][j]);
+            }
+            printf("\n");
+        }
+        return 0;
+    }
+    </pre>
+</body>
+</html>

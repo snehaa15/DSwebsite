@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Questions</title>
+    <style>
+        header{
+			width: 100%; height:100vh;
+			background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("background1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+        nav{
+			width:100%;
+			height:15vh;
+			background:black;
+			color:white;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			text-transform:uppercase;
+		}
+        nav .menu{
+			width:100%;
+            word-spacing: 50px;
+            padding: 150px;
+			/* display:flex; */
+			justify-content: space-between;
+		}
+		nav .menu a{
+			width:35%;
+			text-decoration:none;color:white;
+			font-weight:bold;
+
+		}
+        
+        nav .menu a:first-child{
+        	color:#00b894;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #programList {
+            width: 30%;
+            border-right: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        #programList h2 {
+            font-size: 1.2em;
+        }
+
+        #programList ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        #programList li {
+            margin-bottom: 10px;
+        }
+
+        #programList a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        #programList a:hover {
+            color: #0078d4;
+        }
+
+        #codeOutput {
+            flex: 1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="programList">
+    <h2>Linked List Questions</h2>
+    <ol>
+        <li><a href="linked list q1.html" target="codeFrame">1. Implement the operations of single linked list storing integer values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)?</a></li>
+        <li><a href="linked list q2.html" target="codeFrame">2. Implement the operations of single linked list storing integer values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q3.html" target="codeFrame">3. Implement the operations of single linked list storing integer values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q4.html" target="codeFrame">4. Implement the operations of doubly circular linked list storing integer values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q5.html" target="codeFrame">5. Implement the operations of single linked list storing string values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q6.html" target="codeFrame">6. Implement the operations of single circular linked list storing string values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q7.html" target="codeFrame">7. Implement the operations of doubly linked list storing string values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q8.html" target="codeFrame">8. Implement the operations of doubly circular linked list storing string values (insert at begin,insert at pos,insert at end,delete at begin,delete at end, delete at pos, isempty, isfull, display, search)</a></li>
+        <li><a href="linked list q9.html" target="codeFrame">9. Enter the 2 polynomial equations dynamically, add them and display the answer.</a></li>
+        <li><a href="linked list q10.html" target="codeFrame">10. Enter the 2 polynomial equations dynamically, subtract them and display the answer.</a></li>
+        <li><a href="linked list q11.html" target="codeFrame">11. Enter the 2 polynomial equations dynamically, multiply them and display the answer.</a></li>
+        
+        <!-- Add more program links as needed -->
+    </ol>
+</div>
+
+<div id="codeOutput">
+    <iframe name="codeFrame" src=""></iframe>
+</div>
+
+</body>
+</html>
