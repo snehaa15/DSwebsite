@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Questions</title>
+    <style>
+        header{
+			width: 100%; height:100vh;
+			background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("background1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+        nav{
+			width:100%;
+			height:15vh;
+			background:black;
+			color:white;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			text transform:uppercase;
+		}
+        nav .menu{
+			width:100%;
+            word-spacing: 50px;
+            padding: 150px;
+			/* display:flex; */
+			justify-content: space-between;
+		}
+		nav .menu a{
+			width:35%;
+			text-decoration:none;color:white;
+			font-weight:bold;
+
+		}
+        
+        nav .menu a:first-child{
+        	color:#00b894;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #programList {
+            width: 30%;
+            border-right: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        #programList h2 {
+            font-size: 1.2em;
+        }
+
+        #programList ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        #programList li {
+            margin-bottom: 10px;
+        }
+
+        #programList a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        #programList a:hover {
+            color: #0078d4;
+        }
+
+        #codeOutput {
+            flex: 1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="programList">
+    <h2>Stack Questions</h2>
+    <ol>
+        <li><a href="stack q1.html" target="codeFrame">1. Create a stack implementing the operations on an integer array (push, pop, peek, isempty, isfull)</a></li>
+        <li><a href="stack q2.html" target="codeFrame">2. Create a stack implementing the operations on the characters array (push, pop, peek, isempty, isfull)</a></li>
+        <li><a href="stack q3.html" target="codeFrame">3. Create a stack implementing the operations on an integer nodes (dynamically) (push, pop, peek, isempty, isfull)?</a></li>
+        <li><a href="stack q4.html" target="codeFrame">4. Create a stack implementing the operations on the characters nodes (dynamically) (push, pop, peek, is empty, is full)?</a></li>
+        <li><a href="stack q5.html" target="codeFrame">5. Enter the string from the user and reverse the string using stacks.</a></li>
+        <li><a href="stack q6.html" target="codeFrame">6. Create the program to match the single bracket using stacks.</a></li>
+        <li><a href="stack q7.html" target="codeFrame">7. Create two integer stacks in a single array.</a></li>
+        <li><a href="stack q8.html" target="codeFrame">8. Sort the stack in ascending order using integer array.</a></li>
+        
+        <!-- Add more program links as needed -->
+    </ol>
+</div>
+
+<div id="codeOutput">
+    <iframe name="codeFrame" src=""></iframe>
+</div>
+
+</body>
+</html>
